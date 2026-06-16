@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Error";
+}
+<section class="py-40 px-8 text-center">
+    <div class="text-6xl text-red-400 mb-6"><i class="fa-solid fa-triangle-exclamation"></i></div>
+    <h1 class="text-4xl font-bold text-white mb-4">Something went wrong</h1>
+    <p class="text-slate-400 mb-8">An unexpected error occurred. Please try again later.</p>
+    <a asp-controller="Home" asp-action="Index"
+       class="px-8 py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg smooth-transition">
+        <i class="fa-solid fa-house mr-2"></i>Back to Home
+    </a>
+</section>

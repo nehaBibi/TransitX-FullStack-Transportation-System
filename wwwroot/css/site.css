@@ -1,0 +1,85 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #10263f 0%, #1c3a5b 65%);
+    color: #f1f5f9;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.smooth-transition {
+    transition: all 0.3s ease-in-out;
+}
+
+.glow-cyan {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+}
+
+.glow-hover:hover {
+    box-shadow: 0 0 25px rgba(6, 182, 212, 0.3);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Video Carousel */
+.video-carousel-wrapper {
+    background: linear-gradient(180deg, #10263f 0%, #1c3a5b 65%);
+}
+
+#heroVideo {
+    background: linear-gradient(180deg, #10263f 0%, #1c3a5b 65%);
+}
+
+.video-controls {
+    animation: slideUp 0.6s ease-out 0.5s backwards;
+}
+
+.carousel-indicators {
+    animation: slideUp 0.6s ease-out 0.6s backwards;
+}
+
+.play-pause-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(34, 211, 238, 0.3);
+}
+
+.play-pause-btn:hover {
+    box-shadow: 0 6px 20px rgba(34, 211, 238, 0.5);
+}
+
+.indicator-dot {
+    transition: all 0.4s ease;
+    box-shadow: 0 0 8px rgba(34, 211, 238, 0.4);
+}
+
+.indicator-dot:hover {
+    opacity: 0.8 !important;
+    transform: scale(1.2);
+}
+
+/* Route card hidden state (used by JS search filter) */
+.route-card.hidden-card {
+    display: none;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .video-controls    { bottom: 60px; }
+    .carousel-indicators { bottom: 100px; }
+    .play-pause-btn    { width: 40px; height: 40px; font-size: 16px; }
+    .indicator-dot     { width: 8px !important; height: 8px !important; }
+}
